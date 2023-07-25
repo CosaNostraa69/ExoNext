@@ -1,0 +1,63 @@
+.employeeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  max-width: 450px;
+  border: 1px solid black;
+
+  div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  > p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  > p:last-child {
+    padding-top: 10px;
+    border-top: 1px solid black;
+  }
+
+  > a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+    transition: 200ms;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    > p:first-child {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    > p:last-child {
+      padding-top: 10px;
+      border-top: 1px solid black;
+    }
+  }
+}

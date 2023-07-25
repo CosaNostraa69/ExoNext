@@ -1,0 +1,74 @@
+.wrapper {
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+  }
+  
+  .card {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(221, 212, 212);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .task-list {
+    margin-bottom: 1em;
+  }
+  
+  .task {
+    background-color: #e9f5ff;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 0.5em 0;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #d0e7ff;
+      transform: scale(1.03);
+    }
+  }
+  
+  .input {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-right: 1em;
+    transition: border-color 0.3s;
+  
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+  
+  .addButton {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  
+    &:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+  }
+  
